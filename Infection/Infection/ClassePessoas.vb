@@ -3,13 +3,13 @@
     Dim local As Rectangle
     Dim infectado As Boolean
     Dim vetor As Integer
-    Dim circulando As Boolean
+    Dim vivo As Boolean
 
-    Public Sub New(local As Rectangle, infectado As Boolean, vetor As Integer, circulando As Boolean)
+    Public Sub New(local As Rectangle, infectado As Boolean, vetor As Integer, vivo As Boolean)
 
         Me.local = local
         Me.infectado = infectado
-        Me.circulando = circulando
+        Me.vivo = vivo
         Me.vetor = vetor
 
     End Sub
@@ -41,12 +41,12 @@
         End Set
     End Property
 
-    Public Property GScirculando() As Boolean
+    Public Property GSvivo() As Boolean
         Get
-            Return circulando
+            Return vivo
         End Get
-        Set(circulando_ As Boolean)
-            circulando = circulando_
+        Set(vivo_ As Boolean)
+            vivo = vivo_
         End Set
     End Property
 End Class
