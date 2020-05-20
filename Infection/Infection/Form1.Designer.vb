@@ -61,7 +61,7 @@ Partial Class Form1
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(424, 220)
+        Me.Button1.Location = New System.Drawing.Point(424, 244)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(100, 29)
         Me.Button1.TabIndex = 4
@@ -120,7 +120,7 @@ Partial Class Form1
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.Magenta
+        Me.Label4.ForeColor = System.Drawing.Color.DeepSkyBlue
         Me.Label4.Location = New System.Drawing.Point(421, 160)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"

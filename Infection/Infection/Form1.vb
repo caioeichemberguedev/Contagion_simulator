@@ -148,8 +148,13 @@ Public Class Form1
                 DirectionThatPeopleWillWalkInX(PId) = -DirectionThatPeopleWillWalkInX(PId)
                 DirectionThatPeopleWillWalkInY(PId) = -DirectionThatPeopleWillWalkInY(PId)
 
+                Dim novopontox As Integer
+                Dim novopontoy As Integer
+                novopontox = PopulationList(idpessoa).GSlocal.X + DirectionThatPeopleWillWalkInX(idpessoa)
+                novopontoy = PopulationList(idpessoa).GSlocal.Y + DirectionThatPeopleWillWalkInY(idpessoa)
                 DirectionThatPeopleWillWalkInX(idpessoa) = -DirectionThatPeopleWillWalkInX(idpessoa)
                 DirectionThatPeopleWillWalkInY(idpessoa) = -DirectionThatPeopleWillWalkInY(idpessoa)
+                PopulationList(idpessoa).GSlocal = New Rectangle(novopontox, novopontoy, PeopleSize, PeopleSize)
 
                 If PopulationList(idpessoa).GSinfectado = False And PInfected = True And PVetor > 0 Then
                     NewInfected = idpessoa
@@ -176,7 +181,7 @@ Public Class Form1
                     e.Graphics.DrawEllipse(Pens.Red, rect)
                 Else
                     'e.Graphics.DrawEllipse(Pens.White, rect)
-                    e.Graphics.FillEllipse(Brushes.DeepSkyBlue, rect)
+                    e.Graphics.FillEllipse(Brushes.White, rect)
                 End If
             Next
         End If
